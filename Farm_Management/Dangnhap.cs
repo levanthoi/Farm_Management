@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace Farm_Management
 {
-    public partial class Form1 : Form
+    public partial class Dangnhap : Form
     {
-        public Form1()
+        public Dangnhap()
         {
             InitializeComponent();
-        }
-
-        private void kháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Khachhang kh = new Khachhang();
-            //kh.MdiParent = this;
-            kh.ShowDialog();
         }
     }
 }
