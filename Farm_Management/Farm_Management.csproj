@@ -89,6 +89,12 @@
     <Compile Include="Trangtrai.Designer.cs">
       <DependentUpon>Trangtrai.cs</DependentUpon>
     </Compile>
+    <Compile Include="Xuongsx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Xuongsx.Designer.cs">
+      <DependentUpon>Xuongsx.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Dangnhap.resx">
       <DependentUpon>Dangnhap.cs</DependentUpon>
     </EmbeddedResource>
