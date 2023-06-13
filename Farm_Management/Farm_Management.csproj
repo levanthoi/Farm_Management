@@ -73,16 +73,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="quanLyTrangTraiDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>quanLyTrangTraiDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="quanLyTrangTraiDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>quanLyTrangTraiDataSet1.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Trangtrai.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,9 +90,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Khachhang.resx">
-      <DependentUpon>Khachhang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Nhanvien.resx">
       <DependentUpon>Nhanvien.cs</DependentUpon>
@@ -128,28 +115,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="quanLyTrangTraiDataSet.xsc">
-      <DependentUpon>quanLyTrangTraiDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="quanLyTrangTraiDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>quanLyTrangTraiDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="quanLyTrangTraiDataSet.xss">
-      <DependentUpon>quanLyTrangTraiDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="quanLyTrangTraiDataSet1.xsc">
-      <DependentUpon>quanLyTrangTraiDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="quanLyTrangTraiDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>quanLyTrangTraiDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="quanLyTrangTraiDataSet1.xss">
-      <DependentUpon>quanLyTrangTraiDataSet1.xsd</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
