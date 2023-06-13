@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="chuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chuong.Designer.cs">
+      <DependentUpon>chuong.cs</DependentUpon>
+    </Compile>
     <Compile Include="connectDB.cs" />
     <Compile Include="Dangnhap.cs">
       <SubType>Form</SubType>
