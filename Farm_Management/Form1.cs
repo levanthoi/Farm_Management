@@ -23,5 +23,10 @@ namespace Farm_Management
             //kh.MdiParent = this;
             kh.ShowDialog();
         }
+
+        private void chuồngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
