@@ -16,5 +16,10 @@ namespace Farm_Management
         {
             InitializeComponent();
         }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
