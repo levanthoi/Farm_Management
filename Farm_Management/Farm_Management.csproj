@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="chuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chuong.Designer.cs">
+      <DependentUpon>chuong.cs</DependentUpon>
+    </Compile>
     <Compile Include="connectDB.cs" />
     <Compile Include="Dangnhap.cs">
       <SubType>Form</SubType>
@@ -73,6 +79,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="trangthietbi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="trangthietbi.Designer.cs">
+      <DependentUpon>trangthietbi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Trangtrai.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +97,9 @@
     <Compile Include="Xuongsx.Designer.cs">
       <DependentUpon>Xuongsx.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="chuong.resx">
+      <DependentUpon>chuong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dangnhap.resx">
       <DependentUpon>Dangnhap.cs</DependentUpon>
     </EmbeddedResource>
