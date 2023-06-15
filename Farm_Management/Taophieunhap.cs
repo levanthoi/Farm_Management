@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace Farm_Management
 {
-    public partial class Quanlykho : Form
+    public partial class Taophieunhap : Form
     {
-        public Quanlykho()
+        public Taophieunhap()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void Taophieunhap_Load(object sender, EventArgs e)
         {
 
         }

@@ -23,5 +23,11 @@ namespace Farm_Management
             //kh.MdiParent = this;
             kh.ShowDialog();
         }
+
+        private void quảnLýKhoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Quanlykho qlk = new Quanlykho();
+            qlk.ShowDialog();
+        }
     }
 }
