@@ -24,10 +24,28 @@ namespace Farm_Management
             kh.ShowDialog();
         }
 
-        private void quảnLýKhoToolStripMenuItem_Click(object sender, EventArgs e)
+        private void quảnLýKhoToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             Quanlykho qlk = new Quanlykho();
             qlk.ShowDialog();
+        }
+
+        private void tạoPhiếuNhậpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Taophieunhap tpn = new Taophieunhap();
+            tpn.ShowDialog();
+        }
+
+        private void tạoPhiếuXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Taophieuxuat tpx = new Taophieuxuat();
+            tpx.ShowDialog();
+        }
+
+        private void tạoĐơnHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Taodonhang tdh = new Taodonhang();
+            tdh.ShowDialog();
         }
     }
 }

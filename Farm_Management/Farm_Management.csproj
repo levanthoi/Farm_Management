@@ -79,6 +79,12 @@
     <Compile Include="Quanlykho.Designer.cs">
       <DependentUpon>Quanlykho.cs</DependentUpon>
     </Compile>
+    <Compile Include="Taodonhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Taodonhang.Designer.cs">
+      <DependentUpon>Taodonhang.cs</DependentUpon>
+    </Compile>
     <Compile Include="Taophieunhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +129,9 @@
     </Compile>
     <EmbeddedResource Include="Quanlykho.resx">
       <DependentUpon>Quanlykho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Taodonhang.resx">
+      <DependentUpon>Taodonhang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Taophieunhap.resx">
       <DependentUpon>Taophieunhap.cs</DependentUpon>
