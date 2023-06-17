@@ -89,5 +89,11 @@ namespace Farm_Management
             Trangtrai tt = new Trangtrai();
             tt.ShowDialog();
         }
+
+        private void thiếtBịToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            trangthietbi tb = new trangthietbi();
+            tb.ShowDialog();
+        }
     }
 }
