@@ -73,6 +73,42 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Thongkedoanhthu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thongkedoanhthu.Designer.cs">
+      <DependentUpon>Thongkedoanhthu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Xulydonhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Xulydonhang.Designer.cs">
+      <DependentUpon>Xulydonhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quanlykho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quanlykho.Designer.cs">
+      <DependentUpon>Quanlykho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Taodonhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Taodonhang.Designer.cs">
+      <DependentUpon>Taodonhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Taophieunhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Taophieunhap.Designer.cs">
+      <DependentUpon>Taophieunhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Taophieuxuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Taophieuxuat.Designer.cs">
+      <DependentUpon>Taophieuxuat.cs</DependentUpon>
+    </Compile>
     <Compile Include="Trangtrai.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +139,24 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Thongkedoanhthu.resx">
+      <DependentUpon>Thongkedoanhthu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Xulydonhang.resx">
+      <DependentUpon>Xulydonhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quanlykho.resx">
+      <DependentUpon>Quanlykho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Taodonhang.resx">
+      <DependentUpon>Taodonhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Taophieunhap.resx">
+      <DependentUpon>Taophieunhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Taophieuxuat.resx">
+      <DependentUpon>Taophieuxuat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Trangtrai.resx">
       <DependentUpon>Trangtrai.cs</DependentUpon>
     </EmbeddedResource>
