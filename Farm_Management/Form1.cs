@@ -24,6 +24,23 @@ namespace Farm_Management
             kh.ShowDialog();
         }
 
+        private void chuồngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nhânViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Nhanvien nv = new Nhanvien();
+            //kh.MdiParent = this;
+            nv.ShowDialog();
+        }
+
+        private void xưởngSảnXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Xuongsx xsx = new Xuongsx();
+            //kh.MdiParent = this;
+            xsx.ShowDialog();
         private void quảnLýKhoToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             Quanlykho qlk = new Quanlykho();
