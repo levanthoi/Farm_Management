@@ -57,11 +57,11 @@ namespace Farm_Management
             this.label1.BackColor = System.Drawing.SystemColors.Control;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.LightCoral;
-            this.label1.Location = new System.Drawing.Point(261, 9);
+            this.label1.Location = new System.Drawing.Point(242, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(207, 31);
+            this.label1.Size = new System.Drawing.Size(260, 31);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Xử lý đơn hàng";
+            this.label1.Text = "XỬ LÝ ĐƠN HÀNG";
             // 
             // button2
             // 
@@ -222,7 +222,7 @@ namespace Farm_Management
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
             this.Name = "Xulydonhang";
-            this.Text = "Quanlydonhang";
+            this.Text = "Xử lý đơn hàng";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

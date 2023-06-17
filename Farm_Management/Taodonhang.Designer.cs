@@ -44,6 +44,8 @@ namespace Farm_Management
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.label15 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -57,6 +59,10 @@ namespace Farm_Management
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -67,11 +73,11 @@ namespace Farm_Management
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.LightCoral;
-            this.label1.Location = new System.Drawing.Point(307, 23);
+            this.label1.Location = new System.Drawing.Point(283, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(192, 31);
+            this.label1.Size = new System.Drawing.Size(236, 31);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Tạo đơn hàng";
+            this.label1.Text = "TẠO ĐƠN HÀNG";
             // 
             // label2
             // 
@@ -97,7 +103,7 @@ namespace Farm_Management
             this.comboBox1.Items.AddRange(new object[] {
             "Thu hoạch trực tiếp",
             "Bán từ trong kho"});
-            this.comboBox1.Location = new System.Drawing.Point(107, 19);
+            this.comboBox1.Location = new System.Drawing.Point(131, 19);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 3;
@@ -105,7 +111,7 @@ namespace Farm_Management
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(107, 56);
+            this.comboBox2.Location = new System.Drawing.Point(131, 56);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 21);
             this.comboBox2.TabIndex = 4;
@@ -121,14 +127,14 @@ namespace Farm_Management
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(107, 95);
+            this.textBox1.Location = new System.Drawing.Point(131, 95);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(46, 20);
             this.textBox1.TabIndex = 6;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(107, 132);
+            this.textBox2.Location = new System.Drawing.Point(131, 132);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(46, 20);
             this.textBox2.TabIndex = 8;
@@ -153,7 +159,7 @@ namespace Farm_Management
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(107, 170);
+            this.textBox3.Location = new System.Drawing.Point(131, 170);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(121, 20);
             this.textBox3.TabIndex = 10;
@@ -188,6 +194,8 @@ namespace Farm_Management
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.comboBox4);
+            this.panel1.Controls.Add(this.label15);
             this.panel1.Controls.Add(this.textBox3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label3);
@@ -198,10 +206,27 @@ namespace Farm_Management
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Location = new System.Drawing.Point(10, 98);
+            this.panel1.Location = new System.Drawing.Point(12, 75);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(255, 202);
+            this.panel1.Size = new System.Drawing.Size(255, 227);
             this.panel1.TabIndex = 15;
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Location = new System.Drawing.Point(131, 206);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(121, 21);
+            this.comboBox4.TabIndex = 14;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(7, 209);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(107, 13);
+            this.label15.TabIndex = 30;
+            this.label15.Text = "Hình thức nhận hàng";
             // 
             // panel2
             // 
@@ -320,11 +345,51 @@ namespace Farm_Management
             this.panel3.Size = new System.Drawing.Size(249, 225);
             this.panel3.TabIndex = 28;
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(12, 332);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(72, 13);
+            this.label14.TabIndex = 29;
+            this.label14.Text = "Ngày tạo đơn";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(90, 331);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 30;
+            // 
+            // textBox9
+            // 
+            this.textBox9.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBox9.Enabled = false;
+            this.textBox9.Location = new System.Drawing.Point(374, 331);
+            this.textBox9.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(149, 20);
+            this.textBox9.TabIndex = 55;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(318, 333);
+            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(52, 13);
+            this.label16.TabIndex = 54;
+            this.label16.Text = "Tổng tiền";
+            // 
             // Taodonhang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 376);
+            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.label14);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.button2);
@@ -375,5 +440,11 @@ namespace Farm_Management
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Label label16;
     }
 }

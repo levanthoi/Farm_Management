@@ -73,6 +73,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Thongkedoanhthu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thongkedoanhthu.Designer.cs">
+      <DependentUpon>Thongkedoanhthu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Xulydonhang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +139,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Thongkedoanhthu.resx">
+      <DependentUpon>Thongkedoanhthu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Xulydonhang.resx">
       <DependentUpon>Xulydonhang.cs</DependentUpon>
     </EmbeddedResource>

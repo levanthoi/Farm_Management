@@ -53,5 +53,11 @@ namespace Farm_Management
             Xulydonhang xldh = new Xulydonhang();
             xldh.ShowDialog();
         }
+
+        private void thốngKêDoanhThuToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Thongkedoanhthu tkdt = new Thongkedoanhthu();
+            tkdt.ShowDialog();
+        }
     }
 }
