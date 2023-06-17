@@ -87,9 +87,9 @@ namespace Farm_Management
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(7, 22);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(94, 13);
+            this.label3.Size = new System.Drawing.Size(70, 13);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Chọn loại đơn bán";
+            this.label3.Text = "Loại đơn bán";
             // 
             // comboBox1
             // 

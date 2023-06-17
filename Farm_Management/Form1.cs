@@ -47,5 +47,11 @@ namespace Farm_Management
             Taodonhang tdh = new Taodonhang();
             tdh.ShowDialog();
         }
+
+        private void xửLýĐơnHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Xulydonhang xldh = new Xulydonhang();
+            xldh.ShowDialog();
+        }
     }
 }
