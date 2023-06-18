@@ -18,7 +18,7 @@ namespace Farm_Management
         }
 
         // select du lieu
-        public DataTable GetData(string query)
+        public DataTable getData(string query)
         {
             try
             {
@@ -36,7 +36,7 @@ namespace Farm_Management
         }
 
         // update, delete
-        public void excute(string query)
+        public void update(string query)
         {
             try
             {
