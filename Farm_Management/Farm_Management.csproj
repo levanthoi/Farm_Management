@@ -80,6 +80,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Thongkechitieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thongkechitieu.Designer.cs">
+      <DependentUpon>Thongkechitieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thongkecongno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thongkecongno.Designer.cs">
+      <DependentUpon>Thongkecongno.cs</DependentUpon>
+    </Compile>
     <Compile Include="quanLyTrangTraiDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -96,6 +108,12 @@
     </Compile>
     <Compile Include="Thongkedoanhthu.Designer.cs">
       <DependentUpon>Thongkedoanhthu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thongketonkho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thongketonkho.Designer.cs">
+      <DependentUpon>Thongketonkho.cs</DependentUpon>
     </Compile>
     <Compile Include="Xulydonhang.cs">
       <SubType>Form</SubType>
@@ -163,11 +181,20 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Thongkechitieu.resx">
+      <DependentUpon>Thongkechitieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thongkecongno.resx">
+      <DependentUpon>Thongkecongno.cs</DependentUpon>
+      </EmbeddedResource>
     <EmbeddedResource Include="trangthietbi.resx">
       <DependentUpon>trangthietbi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Thongkedoanhthu.resx">
       <DependentUpon>Thongkedoanhthu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thongketonkho.resx">
+      <DependentUpon>Thongketonkho.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Xulydonhang.resx">
       <DependentUpon>Xulydonhang.cs</DependentUpon>

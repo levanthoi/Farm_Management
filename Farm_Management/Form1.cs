@@ -84,6 +84,23 @@ namespace Farm_Management
             tkdt.ShowDialog();
         }
 
+        private void thốngKêChiTiêuToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Thongkechitieu tkct = new Thongkechitieu();
+            tkct.ShowDialog();
+        }
+
+        private void thốngKêCôngNợToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Thongkecongno tkcn = new Thongkecongno();
+            tkcn.ShowDialog();
+        }
+
+        private void thốngKêTồnKhoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Thongketonkho tktk = new Thongketonkho();
+            tktk.ShowDialog();
+        }
         private void trangTrạiToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Trangtrai tt = new Trangtrai();
