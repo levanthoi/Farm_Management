@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="chuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chuong.Designer.cs">
+      <DependentUpon>chuong.cs</DependentUpon>
+    </Compile>
     <Compile Include="connectDB.cs" />
     <Compile Include="Dangnhap.cs">
       <SubType>Form</SubType>
@@ -84,6 +91,17 @@
     </Compile>
     <Compile Include="Thongkecongno.Designer.cs">
       <DependentUpon>Thongkecongno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="quanLyTrangTraiDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>quanLyTrangTraiDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="trangthietbi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="trangthietbi.Designer.cs">
+      <DependentUpon>trangthietbi.cs</DependentUpon>
     </Compile>
     <Compile Include="Thongkedoanhthu.cs">
       <SubType>Form</SubType>
@@ -139,11 +157,17 @@
     <Compile Include="Xuongsx.Designer.cs">
       <DependentUpon>Xuongsx.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="chuong.resx">
+      <DependentUpon>chuong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dangnhap.resx">
       <DependentUpon>Dangnhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Khachhang.resx">
+      <DependentUpon>Khachhang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Nhanvien.resx">
       <DependentUpon>Nhanvien.cs</DependentUpon>
@@ -162,6 +186,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Thongkecongno.resx">
       <DependentUpon>Thongkecongno.cs</DependentUpon>
+      </EmbeddedResource>
+    <EmbeddedResource Include="trangthietbi.resx">
+      <DependentUpon>trangthietbi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Thongkedoanhthu.resx">
       <DependentUpon>Thongkedoanhthu.cs</DependentUpon>
@@ -187,6 +214,9 @@
     <EmbeddedResource Include="Trangtrai.resx">
       <DependentUpon>Trangtrai.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Xuongsx.resx">
+      <DependentUpon>Xuongsx.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -196,6 +226,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="quanLyTrangTraiDataSet.xsc">
+      <DependentUpon>quanLyTrangTraiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="quanLyTrangTraiDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>quanLyTrangTraiDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="quanLyTrangTraiDataSet.xss">
+      <DependentUpon>quanLyTrangTraiDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
