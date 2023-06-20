@@ -24,6 +24,30 @@ namespace Farm_Management
             kh.ShowDialog();
         }
 
+        private void chuồngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            chuong ch = new chuong();
+            ch.ShowDialog();
+        }
+
+        private void nhânViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Nhanvien nv = new Nhanvien();
+            //kh.MdiParent = this;
+            nv.ShowDialog();
+        }
+
+        private void xưởngSảnXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Xuongsx xsx = new Xuongsx();
+            //kh.MdiParent = this;
+            xsx.ShowDialog();
+        }
+
+        private void khoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
         private void quảnLýKhoToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             Quanlykho qlk = new Quanlykho();
@@ -76,6 +100,17 @@ namespace Farm_Management
         {
             Thongketonkho tktk = new Thongketonkho();
             tktk.ShowDialog();
+        }
+        private void trangTrạiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Trangtrai tt = new Trangtrai();
+            tt.ShowDialog();
+        }
+
+        private void thiếtBịToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            trangthietbi tb = new trangthietbi();
+            tb.ShowDialog();
         }
     }
 }

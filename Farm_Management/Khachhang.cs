@@ -16,5 +16,19 @@ namespace Farm_Management
         {
             InitializeComponent();
         }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            //BindingSource source = new BindingSource();
+            this.customerBindingSource.AddNew();
+        }
+
+        private void Khachhang_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'quanLyTrangTraiDataSet.Customer' table. You can move, or remove it, as needed.
+            this.dgvKhachhang.ClearSelection();
+            this.customerTableAdapter.Fill(this.quanLyTrangTraiDataSet.Customer);
+
+        }
     }
 }
