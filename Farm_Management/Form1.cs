@@ -112,5 +112,11 @@ namespace Farm_Management
             trangthietbi tb = new trangthietbi();
             tb.ShowDialog();
         }
+
+        private void thốngKêVụNuôiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Thongkevunuoi tkvn = new Thongkevunuoi();
+            tkvn.ShowDialog();
+        }
     }
 }
