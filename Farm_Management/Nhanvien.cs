@@ -49,7 +49,7 @@ namespace Farm_Management
                 tinhtrang = 1;
             }
             else tinhtrang = 0;
-                string query = "insert into Account (EmployeeID, Name, Email, Phone, Role, Position, Status) values('" + txtMaNV.Text + "', '" + txtTen.Text + "', '" + txtEmail.Text + "', '" + txtSDT.Text + "', N'" + cbChucvu.SelectedItem.ToString() + "',  N'" + cbVitri.SelectedItem.ToString() + "', '" + tinhtrang + "')";
+                string query = "insert into Account (EmployeeID, Name, Email, Phone, Role, Position, Status) values('" + txtMaNV.Text + "', N'" + txtTen.Text + "', '" + txtEmail.Text + "', '" + txtSDT.Text + "', N'" + cbChucvu.SelectedItem.ToString() + "',  N'" + cbVitri.SelectedItem.ToString() + "', '" + tinhtrang + "')";
                 db.update(query);
                 display();
         

@@ -32,10 +32,7 @@
             this.txtSDT = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.dgvNhanvien = new System.Windows.Forms.DataGridView();
-            this.btnXoa = new System.Windows.Forms.Button();
-            this.btnSua = new System.Windows.Forms.Button();
-            this.btnThem = new System.Windows.Forms.Button();
+            this.dgvXSX = new System.Windows.Forms.DataGridView();
             this.panel7 = new System.Windows.Forms.Panel();
             this.btnTim = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -48,13 +45,21 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.txtDiachi = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnSua = new System.Windows.Forms.Button();
+            this.btnThem = new System.Windows.Forms.Button();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvNhanvien)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvXSX)).BeginInit();
             this.panel7.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel4
@@ -71,7 +76,7 @@
             this.txtSDT.Location = new System.Drawing.Point(140, 4);
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.Size = new System.Drawing.Size(230, 22);
-            this.txtSDT.TabIndex = 1;
+            this.txtSDT.TabIndex = 2;
             // 
             // label4
             // 
@@ -84,53 +89,28 @@
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.dgvNhanvien);
+            this.panel6.Controls.Add(this.dgvXSX);
             this.panel6.Location = new System.Drawing.Point(403, 97);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(768, 380);
             this.panel6.TabIndex = 25;
             // 
-            // dgvNhanvien
+            // dgvXSX
             // 
-            this.dgvNhanvien.AllowUserToDeleteRows = false;
-            this.dgvNhanvien.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvNhanvien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvNhanvien.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvNhanvien.Location = new System.Drawing.Point(0, 0);
-            this.dgvNhanvien.Name = "dgvNhanvien";
-            this.dgvNhanvien.ReadOnly = true;
-            this.dgvNhanvien.RowHeadersVisible = false;
-            this.dgvNhanvien.RowHeadersWidth = 51;
-            this.dgvNhanvien.RowTemplate.Height = 24;
-            this.dgvNhanvien.Size = new System.Drawing.Size(768, 380);
-            this.dgvNhanvien.TabIndex = 0;
-            // 
-            // btnXoa
-            // 
-            this.btnXoa.Location = new System.Drawing.Point(274, 441);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(111, 36);
-            this.btnXoa.TabIndex = 28;
-            this.btnXoa.Text = "Xóa";
-            this.btnXoa.UseVisualStyleBackColor = true;
-            // 
-            // btnSua
-            // 
-            this.btnSua.Location = new System.Drawing.Point(152, 441);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(111, 36);
-            this.btnSua.TabIndex = 27;
-            this.btnSua.Text = "Sửa";
-            this.btnSua.UseVisualStyleBackColor = true;
-            // 
-            // btnThem
-            // 
-            this.btnThem.Location = new System.Drawing.Point(18, 441);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(111, 36);
-            this.btnThem.TabIndex = 26;
-            this.btnThem.Text = "Thêm";
-            this.btnThem.UseVisualStyleBackColor = true;
+            this.dgvXSX.AllowUserToDeleteRows = false;
+            this.dgvXSX.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvXSX.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvXSX.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvXSX.Location = new System.Drawing.Point(0, 0);
+            this.dgvXSX.Name = "dgvXSX";
+            this.dgvXSX.ReadOnly = true;
+            this.dgvXSX.RowHeadersVisible = false;
+            this.dgvXSX.RowHeadersWidth = 51;
+            this.dgvXSX.RowTemplate.Height = 24;
+            this.dgvXSX.Size = new System.Drawing.Size(768, 380);
+            this.dgvXSX.TabIndex = 0;
+            this.dgvXSX.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvXSX_CellContentClick);
+            this.dgvXSX.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvXSX_CellContentClick);
             // 
             // panel7
             // 
@@ -166,7 +146,7 @@
             this.panel2.Location = new System.Drawing.Point(12, 52);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(373, 35);
-            this.panel2.TabIndex = 23;
+            this.panel2.TabIndex = 0;
             // 
             // txtTen
             // 
@@ -189,7 +169,7 @@
             this.txtMaXSX.Location = new System.Drawing.Point(140, 4);
             this.txtMaXSX.Name = "txtMaXSX";
             this.txtMaXSX.Size = new System.Drawing.Size(230, 22);
-            this.txtMaXSX.TabIndex = 1;
+            this.txtMaXSX.TabIndex = 0;
             // 
             // label1
             // 
@@ -213,17 +193,17 @@
             // 
             this.panel3.Controls.Add(this.txtDiachi);
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Location = new System.Drawing.Point(12, 134);
+            this.panel3.Location = new System.Drawing.Point(12, 176);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(373, 35);
-            this.panel3.TabIndex = 22;
+            this.panel3.TabIndex = 1;
             // 
             // txtDiachi
             // 
             this.txtDiachi.Location = new System.Drawing.Point(140, 4);
             this.txtDiachi.Name = "txtDiachi";
             this.txtDiachi.Size = new System.Drawing.Size(230, 22);
-            this.txtDiachi.TabIndex = 1;
+            this.txtDiachi.TabIndex = 4;
             // 
             // label3
             // 
@@ -234,26 +214,94 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Địa chỉ";
             // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.txtEmail);
+            this.panel5.Controls.Add(this.label5);
+            this.panel5.Location = new System.Drawing.Point(12, 134);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(373, 35);
+            this.panel5.TabIndex = 22;
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(140, 4);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(230, 22);
+            this.txtEmail.TabIndex = 3;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(3, 10);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(41, 16);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Email";
+            // 
+            // btnClear
+            // 
+            this.btnClear.Location = new System.Drawing.Point(293, 441);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(88, 36);
+            this.btnClear.TabIndex = 1;
+            this.btnClear.Text = "Làm mới";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.Location = new System.Drawing.Point(199, 441);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(88, 36);
+            this.btnXoa.TabIndex = 1;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+            // 
+            // btnSua
+            // 
+            this.btnSua.Location = new System.Drawing.Point(105, 441);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(88, 36);
+            this.btnSua.TabIndex = 1;
+            this.btnSua.Text = "Sửa";
+            this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
+            // 
+            // btnThem
+            // 
+            this.btnThem.Location = new System.Drawing.Point(11, 441);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(88, 36);
+            this.btnThem.TabIndex = 1;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            // 
             // Xuongsx
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1183, 489);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnThem);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Xuongsx";
             this.Text = "Xuongsx";
+            this.Load += new System.EventHandler(this.Xuongsx_Load);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvNhanvien)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvXSX)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -262,6 +310,8 @@
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -271,10 +321,7 @@
         private System.Windows.Forms.TextBox txtSDT;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.DataGridView dgvNhanvien;
-        private System.Windows.Forms.Button btnXoa;
-        private System.Windows.Forms.Button btnSua;
-        private System.Windows.Forms.Button btnThem;
+        private System.Windows.Forms.DataGridView dgvXSX;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Button btnTim;
         private System.Windows.Forms.TextBox textBox3;
@@ -287,5 +334,12 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox txtDiachi;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Button btnSua;
+        private System.Windows.Forms.Button btnThem;
     }
 }
