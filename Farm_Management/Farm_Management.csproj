@@ -97,6 +97,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>quanLyTrangTraiDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Thongkevunuoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thongkevunuoi.Designer.cs">
+      <DependentUpon>Thongkevunuoi.cs</DependentUpon>
+    </Compile>
     <Compile Include="trangthietbi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,7 +192,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Thongkecongno.resx">
       <DependentUpon>Thongkecongno.cs</DependentUpon>
-      </EmbeddedResource>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thongkevunuoi.resx">
+      <DependentUpon>Thongkevunuoi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="trangthietbi.resx">
       <DependentUpon>trangthietbi.cs</DependentUpon>
     </EmbeddedResource>
