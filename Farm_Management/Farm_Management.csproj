@@ -36,6 +36,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Messaging" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,11 +48,47 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Baydan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Baydan.Designer.cs">
+      <DependentUpon>Baydan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bosunggiong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bosunggiong.Designer.cs">
+      <DependentUpon>Bosunggiong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Capnhatsuckhoe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capnhatsuckhoe.Designer.cs">
+      <DependentUpon>Capnhatsuckhoe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Choan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Choan.Designer.cs">
+      <DependentUpon>Choan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chungloai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chungloai.Designer.cs">
+      <DependentUpon>Chungloai.cs</DependentUpon>
+    </Compile>
     <Compile Include="chuong.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="chuong.Designer.cs">
       <DependentUpon>chuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chuyenchuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chuyenchuong.Designer.cs">
+      <DependentUpon>Chuyenchuong.cs</DependentUpon>
     </Compile>
     <Compile Include="connectDB.cs" />
     <Compile Include="Dangnhap.cs">
@@ -66,11 +103,23 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ghinhanhaohut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ghinhanhaohut.Designer.cs">
+      <DependentUpon>Ghinhanhaohut.cs</DependentUpon>
+    </Compile>
     <Compile Include="Khachhang.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Khachhang.Designer.cs">
       <DependentUpon>Khachhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Luuchiphinuoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Luuchiphinuoi.Designer.cs">
+      <DependentUpon>Luuchiphinuoi.cs</DependentUpon>
     </Compile>
     <Compile Include="Nhanvien.cs">
       <SubType>Form</SubType>
@@ -102,6 +151,12 @@
     </Compile>
     <Compile Include="Thongkevunuoi.Designer.cs">
       <DependentUpon>Thongkevunuoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thuhoach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thuhoach.Designer.cs">
+      <DependentUpon>Thuhoach.cs</DependentUpon>
     </Compile>
     <Compile Include="trangthietbi.cs">
       <SubType>Form</SubType>
@@ -163,8 +218,26 @@
     <Compile Include="Xuongsx.Designer.cs">
       <DependentUpon>Xuongsx.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Baydan.resx">
+      <DependentUpon>Baydan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bosunggiong.resx">
+      <DependentUpon>Bosunggiong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capnhatsuckhoe.resx">
+      <DependentUpon>Capnhatsuckhoe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Choan.resx">
+      <DependentUpon>Choan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chungloai.resx">
+      <DependentUpon>Chungloai.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="chuong.resx">
       <DependentUpon>chuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chuyenchuong.resx">
+      <DependentUpon>Chuyenchuong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dangnhap.resx">
       <DependentUpon>Dangnhap.cs</DependentUpon>
@@ -172,8 +245,14 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Ghinhanhaohut.resx">
+      <DependentUpon>Ghinhanhaohut.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Khachhang.resx">
       <DependentUpon>Khachhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Luuchiphinuoi.resx">
+      <DependentUpon>Luuchiphinuoi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Nhanvien.resx">
       <DependentUpon>Nhanvien.cs</DependentUpon>
@@ -195,6 +274,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Thongkevunuoi.resx">
       <DependentUpon>Thongkevunuoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thuhoach.resx">
+      <DependentUpon>Thuhoach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="trangthietbi.resx">
       <DependentUpon>trangthietbi.cs</DependentUpon>
