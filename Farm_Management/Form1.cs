@@ -118,5 +118,17 @@ namespace Farm_Management
             Thongkevunuoi tkvn = new Thongkevunuoi();
             tkvn.ShowDialog();
         }
+
+        private void bầyĐànToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Baydan bd = new Baydan();
+            bd.ShowDialog();
+        }
+
+        private void chủngLoạiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Chungloai cl = new Chungloai();
+            cl.ShowDialog();
+        }
     }
 }

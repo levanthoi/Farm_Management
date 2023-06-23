@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.tb_username = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tb_password = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -50,16 +50,12 @@
             this.panel1.Size = new System.Drawing.Size(450, 40);
             this.panel1.TabIndex = 0;
             // 
-            // label1
+            // tb_username
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.ForestGreen;
-            this.label1.Location = new System.Drawing.Point(182, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(155, 31);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Đăng nhập";
+            this.tb_username.Location = new System.Drawing.Point(104, 9);
+            this.tb_username.Name = "tb_username";
+            this.tb_username.Size = new System.Drawing.Size(337, 22);
+            this.tb_username.TabIndex = 1;
             // 
             // label2
             // 
@@ -70,12 +66,16 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Tài khoản";
             // 
-            // tb_username
+            // label1
             // 
-            this.tb_username.Location = new System.Drawing.Point(104, 9);
-            this.tb_username.Name = "tb_username";
-            this.tb_username.Size = new System.Drawing.Size(337, 22);
-            this.tb_username.TabIndex = 1;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.ForestGreen;
+            this.label1.Location = new System.Drawing.Point(182, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(155, 31);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Đăng nhập";
             // 
             // panel2
             // 
@@ -111,6 +111,7 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "Đăng nhập";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -120,9 +121,11 @@
             this.button2.TabIndex = 4;
             this.button2.Text = "Thoát";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Dangnhap
             // 
+            this.AcceptButton = this.button1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(507, 242);
